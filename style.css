@@ -239,7 +239,7 @@ footer {
         }
             .mainNews {
                 width: 100%;
-                margin-block-end: 4rem;
+                margin-block: 4rem;
             }
                 .mainNews img:first-child {
                     display: none;
