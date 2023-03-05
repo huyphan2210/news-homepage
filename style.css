@@ -46,6 +46,42 @@ body {
             display: flex;
             justify-content: space-between;
         }
+        .overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.4);
+        }
+
+        .mobileMenu {
+            display: block;
+            position: fixed;
+            height: 100%;
+            width: 60%;
+            background-color: var(--neutral-offWhite);
+            top: 0;
+            left: 100vw;
+            transition: 1s;
+            padding: 1rem;
+        }
+
+            .mobileMenu img {
+                position: absolute;
+                right: 1rem;
+                top: 1rem;
+            }
+
+            .mobileMenu nav {
+                margin-block-start: 4rem;
+            }
+                .mobileMenu nav a{
+                    font-weight: 600;
+                    color: var(--neutral-veryDarkBlue);
+                    margin-block-start: 2rem;
+                }
 
     main {
         width: 80%;
@@ -175,7 +211,7 @@ footer {
 
 @media screen and (max-aspect-ratio: 1) {
     header {
-        width: 80vw;
+        width: 90%;
         position: sticky;
         padding-left: 10%;
         padding-right: 10%;
@@ -187,18 +223,17 @@ footer {
         header img:nth-child(2) {
             display: block;
         }
+            header img:nth-child(2):hover {
+                cursor: pointer;
+            }   
 
         .desktopMenu {
             display: none;
         }
 
-        .mobileMenu {
-            position: fixed;
-            left: 100%;
-            transform: none;
-            /* transition: transform 2s; */
-        }
-
+    main {
+        width: 90%;
+    }
         .mainContent {
             flex-direction: column;
         }
