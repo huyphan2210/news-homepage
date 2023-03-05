@@ -212,7 +212,7 @@ footer {
 @media screen and (max-aspect-ratio: 1) {
     header {
         width: 90%;
-        position: sticky;
+        position: fixed;
         padding-left: 10%;
         padding-right: 10%;
         top: 0;
